@@ -12,7 +12,6 @@ define("VENDOR_DIR", APP_DIR . 'vendor' . DIRECTORY_SEPARATOR);
 define("CORE_DIR", VENDOR_DIR . 'core' . DIRECTORY_SEPARATOR);
 define("MEDOO_DIR", VENDOR_DIR);
 define("WEB_DIR", APP_DIR . 'web' . DIRECTORY_SEPARATOR);
-define("CRONTAB_DIR", WEB_DIR . 'cronweb' . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR);
 
 $config = [
     "org_name" => 'Your organization name',
@@ -27,7 +26,7 @@ $config = [
         901 => 'Ошибка сохранения данных',
     ],
     "autoload_path" => [
-        CORE_DIR, MEDOO_DIR, CONTROLLERS_DIR, MODELS_DIR, CRONTAB_DIR
+        CORE_DIR, MEDOO_DIR, CONTROLLERS_DIR, MODELS_DIR
     ],
     "routes" => [
         ['route' => '/', 'name' => 'index', 'method' => 'GET'],
