@@ -15,7 +15,7 @@ define("WEB_DIR", APP_DIR . 'web' . DIRECTORY_SEPARATOR);
 define("CRONTAB_DIR", WEB_DIR . 'cronweb' . DIRECTORY_SEPARATOR . 'lib' . DIRECTORY_SEPARATOR);
 
 $config = [
-    "org_name" => 'Управление Росреестра по Республике Коми',
+    "org_name" => 'Your organization name',
     "errors" => [
         403 => 'Доступ запрещен',
         404 => 'Запрашиваемая страница не найдена',
@@ -32,19 +32,15 @@ $config = [
     "routes" => [
         ['route' => '/', 'name' => 'index', 'method' => 'GET'],
         ['route' => '/index', 'name' => 'index', 'method' => 'GET'],
-        ['route' => '/task', 'name' => 'task', 'method' => 'GET'],
-        ['route' => '/task', 'name' => 'task', 'method' => 'POST'],
-        ['route' => '/reminder', 'name' => 'task', 'method' => 'GET'],
-        ['route' => '/reminder', 'name' => 'task', 'method' => 'POST'],
-        ['route' => '/recipient', 'name' => 'recipient', 'method' => 'GET'],
-        ['route' => '/recipient', 'name' => 'recipient', 'method' => 'POST'],
+        ['route' => '/profile', 'name' => 'task', 'method' => 'GET'],
+        ['route' => '/profile', 'name' => 'task', 'method' => 'POST'],
     ],
     "connection" => [
         'database_type' => 'mysql',
-        'database_name' => 'tasky',
-        'server' => 'localhost',
-        'username' => 'root',
-        'password' => 'rjhtym',
+        'database_name' => 'dbname',
+        'server' => 'dbserver',
+        'username' => 'dbuser',
+        'password' => 'dbpass',
 
         // [optional]
         'charset' => 'utf8',
