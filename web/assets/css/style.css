@@ -1,0 +1,21 @@
+html {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.form-control {
+    font-size: 0.9em;
+}
+
+main {
+    /*font-size: 0.8em;*/
+    color: #666;
+}
+
+h1.title, h2.title, h3.title {
+    color: red;
+}
+
+main > .container {
+  /*padding: 60px 15px 0;*/
+}
